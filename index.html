@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/icons8-documento-48.png">
+  <title> Sport Form ~ SPA </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a class="header__logo" href="/">
+      <span>Sport</span>
+      <span>Form</span>
+    </a>
+    <nav class="header__navigation">
+      <ul class="header__content">
+        <li class="header__item"><a class="header__link" href="#">Inicio</a></li>
+        <li class="header__item"><a class="header__link" href="#registro">Registro</a></li>
+        <li class="header__item"><a class="header__link" href="#atletas">Atletas</a></li>
+      </ul>
+    </nav>
+    <div class="header__theme">Theme</div>
+  </header>
+
+  <main class="main">
+    <div id="app"></div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__info">Create by <a class="footer__link" href="#">Andy</a></p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="app.js" type="module"></script>
+  <script>
+    function soloNumeros (e) {
+      if(e.keyCode >= 48 && e.keyCode <= 57) return true
+      return false
+    }
+  </script>
+</body>
+</html>
